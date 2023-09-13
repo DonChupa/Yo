@@ -1,20 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Delete
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-content class="background">
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/read']">
+          <ion-icon name="Library"></ion-icon>
+          Read
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/update']">
+          <ion-icon name="radio"></ion-icon>
+          Update
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/delete']">
+          <ion-icon name="close-circle-outline"></ion-icon>
+          Delete
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/create']">
+          <ion-icon name="construct-outline"></ion-icon>
+          Create
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  
 
   <div id="container">
+  <ion-card style="padding:20px">
+      <ion-card-content>
     <strong> Saracatunga </strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      </ion-card-content>
+  </ion-card>
   </div>
 </ion-content>

@@ -25,3 +25,12 @@
 #container a {
   text-decoration: none;
 }
+
+// fondo 
+ion-content.background{
+  --background: url(https://i.pinimg.com/originals/3b/0e/67/3b0e67bcfac1858e368480b3184fb5d1.jpg) 0 0/100% 100% no-repeat;
+}
+
+ion-tab-button{
+  padding: 5px;
+}
