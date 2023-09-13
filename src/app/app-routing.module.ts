@@ -2,13 +2,33 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'login',
+    loadChildren: () => import('./Login/login.module').then( m => m.LoginPageModule)
+  },
+// paths CRUD
+  {
+    path: 'create',
+    loadChildren: () => import('./Create/create.module').then( m => m.CreatePageModule)
   },
   {
+    path: 'read',
+    loadChildren: () => import('./Read/read.module').then( m => m.ReadPageModule)
+  },
+  {
+    path: 'update',
+    loadChildren: () => import('./Update/update.module').then( m => m.UpdatePageModule)
+  },
+  {
+    path: 'delete',
+    loadChildren: () => import('./Delete/delete.module').then( m => m.DeletePageModule)
+  },
+
+  //
+  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
 ];
