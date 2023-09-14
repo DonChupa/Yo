@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./Register/register.module').then(m => m.RegisterPageModule)
   },
+  {
+    path: 'content',
+    loadChildren: () => import('./Content/content.module').then(m => m.ContentPageModule)
+  },
   
 
   //
