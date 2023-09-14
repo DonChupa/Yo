@@ -28,9 +28,8 @@
 
 // fondo 
 ion-content.background{
-  --background: url(https://i.pinimg.com/originals/3b/0e/67/3b0e67bcfac1858e368480b3184fb5d1.jpg) 0 0/100% 100% no-repeat;
-}
-
+  --background: linear-gradient(45deg, rgba(255,0,0,1) 5%, rgba(29,33,253,1) 60%,rgba(255,255,255,1) 100%);
+  }
 ion-tab-button{
   padding: 5px;
 }

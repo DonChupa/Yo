@@ -24,11 +24,20 @@ const routes: Routes = [
     path: 'delete',
     loadChildren: () => import('./Delete/delete.module').then( m => m.DeletePageModule)
   },
+  {
+    path: 'lobby',
+    loadChildren: () => import('./Lobby/lobby.module').then( m => m.LobbyPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./Register/register.module').then(m => m.RegisterPageModule)
+  },
+  
 
   //
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'register',
     pathMatch: 'full'
   },
 ];
