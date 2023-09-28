@@ -12,7 +12,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
   ],
   declarations: [LoginPage]
 })
